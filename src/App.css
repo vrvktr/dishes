@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navBar{
+  background-color: white;
+  
+}
+.DishImages{
+  width: 55px;
+  height: 55px;
+}
+.btn{
+  border-radius: 15px;
+}
+.addBorder{
+  border-bottom: 1px solid #6b6a6a2b;
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+.isactive {
+ border-bottom:3px solid red !important;
+ color: red !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart {
+    overflow-x: scroll;
+  }
+}
+
+.addOns{
+  color:red;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #0d6efd;
+  text-decoration: none !important;
 }
