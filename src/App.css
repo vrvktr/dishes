@@ -43,7 +43,15 @@
   height: 55px;
 }
 .btn{
-  border-radius: 15px;
+  border-radius: 2px!important;
+}
+.btn-left{
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+.btn-right{
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;  
 }
 .addBorder{
   border-bottom: 1px solid #6b6a6a2b;
@@ -73,6 +81,7 @@
 .isactive {
  border-bottom:3px solid red !important;
  color: red !important;
+ 
 }
 
 @media only screen and (max-width: 600px) {

@@ -32,7 +32,7 @@ const Dish = (props) => {
                                     <div>
                                         <div class="input-group">
                                             <span class="input-group-btn">
-                                                <button type="button" className="btn btn-success " onClick={() => props.minus(item.dish_id, item.value)} >
+                                                <button type="button" className="btn btn-success btn-left " onClick={() => props.minus(item.dish_id, item.value)} >
                                                     <i class="fa fa-minus" aria-hidden="true"></i>
                                                 </button>
                                             </span>
@@ -43,7 +43,7 @@ const Dish = (props) => {
                                             </span>
 
                                             <span class="input-group-btn">
-                                                <button type="button" className="btn btn-success" onClick={() => props.plus(item.dish_id, item.value)} >
+                                                <button type="button" className="btn btn-success btn-right" onClick={() => props.plus(item.dish_id, item.value)} >
                                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                                 </button>
                                             </span>

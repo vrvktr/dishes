@@ -9,14 +9,12 @@ const Dishes = (props) => {
     const [isActiveTab, setActiveTab] = useState(0);
 
     useEffect(() => {
-        console.log("da");
         axios.get(`https://run.mocky.io/v3/a67edc87-49c7-4822-9cb4-e2ef94cb3099`)
             .then(res => {
                 const data = res.data[0];
                 const table_items = data.table_menu_list;
                 const selectedDishes = table_items[0];
                 let selectedDish = selected(selectedDishes);
-                console.log('selectedDish', selectedDish);
                 setSelectedCategories(selectedDish);
                 setDishCategories(table_items);
                 setDish(data);
@@ -25,14 +23,11 @@ const Dishes = (props) => {
 
     const selected = (data) => {
         var x = [];
-        console.log(data)
         let category_dishes = data.category_dishes;
         category_dishes.forEach((selected) => {
             selected["value"] = 0;
             x.push(selected);
         });
-        console.log("category_dishes", category_dishes);
-        console.log("x", x);
         return x;
 
     }
@@ -66,14 +61,11 @@ const Dishes = (props) => {
     }
 
     const onChangeTab = (id,tab) => {
-        console.log(id);
         setSelectedCategories();
 
-        console.log("isDishCategories", isDishCategories);
         let data = isDishCategories.filter((item) => item.menu_category_id == id);
         let select = data[0];
         let selectedDish = selected(select);
-        console.log("dtttt", selectedDish);
         setSelectedCategories(selectedDish);
         setActiveTab(tab);
     }
@@ -94,7 +86,6 @@ const Dishes = (props) => {
                             </div>
                         </div>
                     </div>
-                    {console.log("qwqeqweqw", isSelectedCategories)}
 
                     {isSelectedCategories.length > 0 && (
                         <div className="px-2">
