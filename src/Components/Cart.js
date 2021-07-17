@@ -15,7 +15,7 @@ class Cart extends Component {
             this.setState({isCart: value})
         }else{
             value=value-1;
-            this.setState({isCart: this.state.isCart--})
+            this.setState({isCart: value})
         }
 
     }
